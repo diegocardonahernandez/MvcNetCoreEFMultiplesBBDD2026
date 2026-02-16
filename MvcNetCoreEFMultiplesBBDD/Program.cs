@@ -5,8 +5,6 @@ using MvcNetCoreEFMultiplesBBDD.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddTransient<RepositoryEmpleados>();
-
 //builder.Services.AddTransient<IRepositoryEmpleados, RepositoryEmpleadosSQLServer>();
 //string connectionString = builder.Configuration.GetConnectionString("SqlConnection");
 //builder.Services.AddDbContext<HospitalContext>(options => options.UseSqlServer(connectionString));

@@ -15,11 +15,11 @@ namespace MvcNetCoreEFMultiplesBBDD.Models
         public string Oficio{ get; set; }
         [Column("SALARIO")]
         public int Salario { get; set; }
-        [Column("DEPT_NO")]
+        [Column("IDDEPARTAMENTO")]
         public int IdDepartamento { get; set; }
-        [Column("DNOMBRE")]
+        [Column("DEPARTAMENTO")]
         public string Departamento { get; set; }
-        [Column("LOC")]
+        [Column("LOCALIDAD")]
         public string Localidad { get; set; }
     }
 }
