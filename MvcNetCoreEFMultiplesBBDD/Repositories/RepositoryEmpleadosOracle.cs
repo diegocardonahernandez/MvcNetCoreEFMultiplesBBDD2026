@@ -15,6 +15,9 @@ as
     from EMP
     inner join DEPT
     on EMP.DEPT_NO = DEPT.DEPT_NO;
+
+--------------------
+
 create or replace procedure SP_ALL_VEMPLEADOS
 (p_cursor_empleados out SYS_REFCURSOR)
 as
@@ -63,6 +66,16 @@ namespace MvcNetCoreEFMultiplesBBDD.Repositories
                            where datos.IdEmpleado == id
                            select datos;
             return await consulta.FirstOrDefaultAsync();
+        }
+
+        public Task<List<Empleado>> GetEmpleados()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task CreateEmpleado(string apellido, string oficio, int dir, int salario, int comision, string dept)
+        {
+            throw new NotImplementedException();
         }
     }
 }
